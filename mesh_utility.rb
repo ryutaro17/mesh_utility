@@ -33,7 +33,7 @@ module MeshUtility
 		{lat: lat, lng: lng}
 	end
 	
-	# 当該３次メッシュコードの４つ過度の座標を左上、左下、右下、右上で返す
+	# 当該３次メッシュコードの四隅の座標を左上、左下、右下、右上で返す
     def meshCd3ToRectangleLatLng(mesh_cd)
 
         target_mesh_cd = mesh_cd.class == String ? mesh_cd.to_i : mesh_cd
